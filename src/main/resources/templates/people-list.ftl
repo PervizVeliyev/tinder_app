@@ -29,8 +29,8 @@
                         <table class="table-users table" border="0">
                             <tbody>
                             <#list users as user>
-                                <tr>
-                                    <td width="10">
+                                <tr onclick="location.href='/message/${user.getId()}'" class="bg-danger">
+                                    <td>
                                         <div class="avatar-img">
                                             <img class="img-circle" src="${user.getPhotoLink()}" />  
                                         </div>

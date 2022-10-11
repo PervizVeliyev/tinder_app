@@ -12,5 +12,9 @@ public class UserService {
         return userDaoDatabase.getAll();
     }
 
+    public User getUser(int id){
+        return userDaoDatabase.get(id);
+    }
+
 
 }

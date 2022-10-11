@@ -16,7 +16,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ServletUsers extends HttpServlet {
+public class UserServlet extends HttpServlet {
     UserService userService = new UserService();
     LikeService likeService = new LikeService();
     private static int counter;

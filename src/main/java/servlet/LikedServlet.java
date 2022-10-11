@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class ServletLiked extends HttpServlet {
+public class LikedServlet extends HttpServlet {
     LikeService likeService = new LikeService();
 
     @SneakyThrows

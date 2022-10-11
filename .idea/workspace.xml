@@ -5,19 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/LikeDaoDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Like.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/LikeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletLiked.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utility/FreeMarkerTemplate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/MessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/ServletUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletLiked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,7 +97,10 @@
       <workItem from="1665407512259" duration="1281000" />
       <workItem from="1665408903938" duration="3819000" />
       <workItem from="1665425576700" duration="3137000" />
-      <workItem from="1665466199631" duration="15006000" />
+      <workItem from="1665466199631" duration="15348000" />
+      <workItem from="1665489871655" duration="5845000" />
+      <workItem from="1665503922261" duration="2173000" />
+      <workItem from="1665512025346" duration="3601000" />
     </task>
     <servers />
   </component>
@@ -117,5 +120,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.io.IOException" package="java.io" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
