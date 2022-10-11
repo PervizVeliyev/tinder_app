@@ -11,6 +11,9 @@ public class User {
         this.photoLink = photoLink;
     }
 
+    public User() {
+    }
+
     public String getName() {
         return name;
     }
