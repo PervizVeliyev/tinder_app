@@ -1,11 +1,13 @@
 package entity;
 
 public class User {
+    private int id;
     private String name;
     private String surname;
     private String photoLink;
 
-    public User(String name, String surname, String photoLink) {
+    public User(int id, String name, String surname, String photoLink) {
+        this.id = id;
         this.name = name;
         this.surname = surname;
         this.photoLink = photoLink;
@@ -36,5 +38,13 @@ public class User {
 
     public void setPhotoLink(String photoLink) {
         this.photoLink = photoLink;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }

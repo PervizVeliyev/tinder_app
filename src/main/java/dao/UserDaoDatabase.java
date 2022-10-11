@@ -7,10 +7,8 @@ import lombok.SneakyThrows;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 public class UserDaoDatabase implements DAO<User>{
     private final Connection connection = DatabaseConnection.getConnection();
@@ -23,10 +21,11 @@ public class UserDaoDatabase implements DAO<User>{
         PreparedStatement statement = connection.prepareStatement(query);
         ResultSet resultSet = statement.executeQuery();
         while (resultSet.next()) {
+            int id = resultSet.getInt("id");
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
             String photoLink = resultSet.getString("photoLink");
-            users.add(new User(name, surname, photoLink));
+            users.add(new User(id, name, surname, photoLink));
         }
         return users;
     }
@@ -34,15 +33,16 @@ public class UserDaoDatabase implements DAO<User>{
     @SneakyThrows
     @Override
     public User get(int id) {
-        String query = "select * from user where id = ?";
+        String query = "select * from \"user\" where id = ?";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setInt(1, id);
         ResultSet resultSet = statement.executeQuery();
         while (resultSet.next()) {
+            id = resultSet.getInt("id");
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
             String photoLink = resultSet.getString("photoLink");
-            return new User(name, surname, photoLink);
+            return new User(id, name, surname, photoLink);
         }
         return new User();
     }
@@ -50,7 +50,7 @@ public class UserDaoDatabase implements DAO<User>{
     @SneakyThrows
     @Override
     public void insert(User user){
-        String query = "insert into user (name, surname, photoLink) " +
+        String query = "insert into \"user\" (name, surname, photoLink) " +
                 "values (?, ?, ?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, user.getName());
@@ -62,7 +62,7 @@ public class UserDaoDatabase implements DAO<User>{
     @SneakyThrows
     @Override
     public void remove(int id) {
-        String query = "delete from user where id = ?";
+        String query = "delete from \"user\" where id = ?";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.execute();
     }
