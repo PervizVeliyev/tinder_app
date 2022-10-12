@@ -25,7 +25,9 @@ public class UserDaoDatabase implements DAO<User>{
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
             String photoLink = resultSet.getString("photoLink");
-            users.add(new User(id, name, surname, photoLink));
+            String mail = resultSet.getString("mail");
+            String password = resultSet.getString("password");
+            users.add(new User(id, name, surname, photoLink, mail, password));
         }
         return users;
     }
@@ -42,7 +44,9 @@ public class UserDaoDatabase implements DAO<User>{
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
             String photoLink = resultSet.getString("photoLink");
-            return new User(id, name, surname, photoLink);
+            String mail = resultSet.getString("mail");
+            String password = resultSet.getString("password");
+            return new User(id, name, surname, photoLink, mail, password);
         }
         return new User();
     }
@@ -50,12 +54,14 @@ public class UserDaoDatabase implements DAO<User>{
     @SneakyThrows
     @Override
     public void insert(User user){
-        String query = "insert into \"user\" (name, surname, photoLink) " +
-                "values (?, ?, ?)";
+        String query = "insert into \"user\" (name, surname, photoLink, mail, password) " +
+                "values (?, ?, ?, ? , ?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, user.getName());
         statement.setString(2, user.getSurname());
         statement.setString(3, user.getPhotoLink());
+        statement.setString(4, user.getMail());
+        statement.setString(5, user.getPassword());
         statement.execute();
     }
 

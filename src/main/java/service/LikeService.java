@@ -32,6 +32,4 @@ public class LikeService {
     public void insertLike(Like like){
         likeDaoDatabase.insert(like);
     }
-
-
 }

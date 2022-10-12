@@ -5,19 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/service/LoginService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletLiked.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/ServletUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/LikeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LikeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +97,10 @@
       <workItem from="1665466199631" duration="15348000" />
       <workItem from="1665489871655" duration="5845000" />
       <workItem from="1665503922261" duration="2173000" />
-      <workItem from="1665512025346" duration="3601000" />
+      <workItem from="1665512025346" duration="4090000" />
+      <workItem from="1665556338715" duration="1982000" />
+      <workItem from="1665572254523" duration="1792000" />
+      <workItem from="1665576192018" duration="1924000" />
     </task>
     <servers />
   </component>
