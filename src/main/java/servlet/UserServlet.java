@@ -19,15 +19,15 @@ import java.util.Map;
 public class UserServlet extends HttpServlet {
     UserService userService = new UserService();
     LikeService likeService = new LikeService();
-    private static int counter;
+    private static int counter = 0;
 
     @SneakyThrows
     @Override
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs){
         List<User> users = userService.getAllUsers();
         if(counter == users.size()) rs.sendRedirect("/liked");
-        User user = users.get(counter);
 
+        User user = users.get(counter);
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         Map<String, Object> mapper = new HashMap<>();
         mapper.put("image", user.getPhotoLink());
