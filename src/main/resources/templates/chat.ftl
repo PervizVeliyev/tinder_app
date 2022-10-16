@@ -31,7 +31,7 @@
                         <p class="arrow-up mb-0">
                             <i class="fa fa-arrow-up text-center pt-1"></i>
                         </p>
-                        <i class="fa fa-times hover text-center pt-1"></i>
+                        <i class="fa fa-times hover text-center pt-1" onclick="location.href='/liked'"></i>
                     </div>
                 </div>
                 <div class="row header-two w-100">

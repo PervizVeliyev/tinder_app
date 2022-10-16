@@ -43,7 +43,7 @@
                                         Builder Sales Agent
                                     </td>
                                     <td  class="align-middle">
-                                        Last Login:  6/10/2017<br><small class="text-muted">5 days ago</small>
+                                        Last Login:  ${user.getLastLogin()}<br><small class="text-muted">${user.getLastLoginGap()} days ago</small>
                                     </td>
                                 </tr>
                             </#list>

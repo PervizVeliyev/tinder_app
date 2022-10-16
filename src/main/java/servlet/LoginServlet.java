@@ -27,7 +27,9 @@ public class LoginServlet extends HttpServlet {
         String mail = rq.getParameter("mail");
         String password = rq.getParameter("password");
         User user = loginService.getUser(mail, password);
-        if(user != null) rs.sendRedirect("/users");
-        else rs.sendRedirect("/login");
+        if (user != null) {
+            loginService.setLastLogin(user.getId());
+            rs.sendRedirect("/users");
+        } else rs.sendRedirect("/login");
     }
 }

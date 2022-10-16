@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="tinder@localhost" uuid="e310e431-f8c0-44ac-a937-a94d59fdbe64">
+    <data-source source="LOCAL" name="dd69aa0lk9lb14@ec2-54-77-40-202.eu-west-1.compute.amazonaws.com" uuid="5fc9202a-2926-4449-aa08-7ed373d99133">
       <driver-ref>postgresql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://localhost:5432/tinder</jdbc-url>
+      <jdbc-url>jdbc:postgresql://ec2-54-77-40-202.eu-west-1.compute.amazonaws.com:5432/dd69aa0lk9lb14</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
+      <driver-properties>
+        <property name="ssl" value="true" />
+        <property name="sslfactory" value="org.postgresql.ssl.NonValidatingFactory" />
+        <property name="sslmode" value="verify-ca" />
+      </driver-properties>
     </data-source>
   </component>
 </project>

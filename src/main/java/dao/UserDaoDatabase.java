@@ -5,12 +5,14 @@ import entity.User;
 import lombok.SneakyThrows;
 
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UserDaoDatabase implements DAO<User>{
+public class UserDaoDatabase implements DAO<User> {
     private final Connection connection = DatabaseConnection.getConnection();
 
     @SneakyThrows
@@ -27,7 +29,13 @@ public class UserDaoDatabase implements DAO<User>{
             String photoLink = resultSet.getString("photoLink");
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
-            users.add(new User(id, name, surname, photoLink, mail, password));
+            Date date = resultSet.getDate("last_login");
+            if (date == null) {
+                users.add(new User(id, name, surname, photoLink, mail, password, null));
+            } else {
+                users.add(new User(id, name, surname, photoLink, mail, password, date.toLocalDate()));
+            }
+
         }
         return users;
     }
@@ -46,14 +54,18 @@ public class UserDaoDatabase implements DAO<User>{
             String photoLink = resultSet.getString("photoLink");
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
-            return new User(id, name, surname, photoLink, mail, password);
+            Date date = resultSet.getDate("last_login");
+            if (date == null) {
+                return new User(id, name, surname, photoLink, mail, password, null);
+            }
+            return new User(id, name, surname, photoLink, mail, password, date.toLocalDate());
         }
         return new User();
     }
 
     @SneakyThrows
     @Override
-    public void insert(User user){
+    public void insert(User user) {
         String query = "insert into \"user\" (name, surname, photoLink, mail, password) " +
                 "values (?, ?, ?, ? , ?)";
         PreparedStatement statement = connection.prepareStatement(query);
@@ -70,6 +82,18 @@ public class UserDaoDatabase implements DAO<User>{
     public void remove(int id) {
         String query = "delete from \"user\" where id = ?";
         PreparedStatement statement = connection.prepareStatement(query);
+        statement.setInt(1, id);
+        statement.execute();
+    }
+
+    @SneakyThrows
+    public void updateLastLogin(int id) {
+        String query = "UPDATE \"user\" "
+                + "SET last_login = ? "
+                + "WHERE id = ?";
+        PreparedStatement statement = connection.prepareStatement(query);
+        statement.setObject(1, LocalDate.now());
+        statement.setInt(2, id);
         statement.execute();
     }
 }

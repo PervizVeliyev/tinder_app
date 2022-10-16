@@ -3,9 +3,8 @@
   <database-model serializer="dbm" dbms="POSTGRES" family-id="POSTGRES" format-version="4.40">
     <root id="1">
       <DateStyle>mdy</DateStyle>
-      <IntrospectionStateNumber>898</IntrospectionStateNumber>
-      <ServerVersion>14.5</ServerVersion>
-      <StartupTime>1664431170</StartupTime>
+      <ServerVersion>14.3</ServerVersion>
+      <StartupTime>1664776358</StartupTime>
       <TimeZones>true ACDT
 true ACSST
 false ACST
@@ -809,11 +808,8 @@ false Zulu
 13388||10|C|G
 13388||-9223372036854775808|U|G
 13388||10|U|G</Grants>
-      <IntrospectionStateNumber>898</IntrospectionStateNumber>
+      <IntrospectionStateNumber>759</IntrospectionStateNumber>
       <ObjectId>16408</ObjectId>
-      <Relations>sequence|table|16421|16422|1
-sequence|table|16447|16440|1
-</Relations>
       <OwnerName>postgres</OwnerName>
     </database>
     <role id="5" parent="1" name="pg_database_owner">
@@ -4233,168 +4229,10 @@ sequence|table|16447|16440|1
     <schema id="263" parent="4" name="public">
       <Comment>standard public schema</Comment>
       <Current>1</Current>
-      <IntrospectionStateNumber>898</IntrospectionStateNumber>
+      <IntrospectionStateNumber>759</IntrospectionStateNumber>
       <ObjectId>2200</ObjectId>
       <StateNumber>527</StateNumber>
       <OwnerName>postgres</OwnerName>
     </schema>
-    <sequence id="264" parent="263" name="message_id_seq">
-      <DataType>integer|0s</DataType>
-      <ObjectId>16447</ObjectId>
-      <StateNumber>870</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <sequence id="265" parent="263" name="user_id_seq">
-      <DataType>integer|0s</DataType>
-      <ObjectId>16421</ObjectId>
-      <StateNumber>810</StateNumber>
-      <OwnerName>postgres</OwnerName>
-    </sequence>
-    <table id="266" parent="263" name="like">
-      <ObjectId>16431</ObjectId>
-      <StateNumber>824</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="267" parent="263" name="message">
-      <ObjectId>16440</ObjectId>
-      <StateNumber>867</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <table id="268" parent="263" name="user">
-      <ObjectId>16422</ObjectId>
-      <StateNumber>897</StateNumber>
-      <AccessMethodId>2</AccessMethodId>
-      <OwnerName>postgres</OwnerName>
-    </table>
-    <column id="269" parent="266" name="id">
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>834</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="270" parent="266" name="like_id">
-      <DataType>integer|0s</DataType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-      <StateNumber>825</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <index id="271" parent="266" name="like_pk">
-      <ColNames>id
-like_id</ColNames>
-      <ObjectId>16438</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>841</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="272" parent="266" name="like_pk">
-      <ObjectId>16439</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>841</StateNumber>
-      <UnderlyingIndexId>16438</UnderlyingIndexId>
-    </key>
-    <column id="273" parent="267" name="id">
-      <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;message_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>871</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="274" parent="267" name="sender">
-      <DataType>integer|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>865</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="275" parent="267" name="receiver">
-      <DataType>integer|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>866</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="276" parent="267" name="content">
-      <DataType>text|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>867</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="277" parent="267" name="message_pk">
-      <ColNames>id</ColNames>
-      <ObjectId>16445</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>868</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="278" parent="267" name="message_pk">
-      <ObjectId>16446</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>868</StateNumber>
-      <UnderlyingIndexId>16445</UnderlyingIndexId>
-    </key>
-    <column id="279" parent="268" name="id">
-      <DataType>integer|0s</DataType>
-      <DefaultExpression>nextval(&apos;user_id_seq&apos;::regclass)</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-      <StateNumber>810</StateNumber>
-      <TypeId>23</TypeId>
-    </column>
-    <column id="280" parent="268" name="name">
-      <DataType>text|0s</DataType>
-      <Position>2</Position>
-      <StateNumber>810</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="281" parent="268" name="surname">
-      <DataType>text|0s</DataType>
-      <Position>3</Position>
-      <StateNumber>810</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="282" parent="268" name="photoLink">
-      <DataType>text|0s</DataType>
-      <Position>4</Position>
-      <StateNumber>810</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="283" parent="268" name="mail">
-      <DataType>text|0s</DataType>
-      <Position>5</Position>
-      <StateNumber>895</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <column id="284" parent="268" name="password">
-      <DataType>text|0s</DataType>
-      <Position>6</Position>
-      <StateNumber>897</StateNumber>
-      <TypeId>25</TypeId>
-    </column>
-    <index id="285" parent="268" name="user_id_uindex">
-      <ColNames>id</ColNames>
-      <ObjectId>16428</ObjectId>
-      <StateNumber>811</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <index id="286" parent="268" name="user_pk">
-      <ColNames>id</ColNames>
-      <ObjectId>16429</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>812</StateNumber>
-      <Unique>1</Unique>
-      <AccessMethodId>403</AccessMethodId>
-    </index>
-    <key id="287" parent="268" name="user_pk">
-      <ObjectId>16430</ObjectId>
-      <Primary>1</Primary>
-      <StateNumber>812</StateNumber>
-      <UnderlyingIndexId>16429</UnderlyingIndexId>
-    </key>
   </database-model>
 </dataSource>

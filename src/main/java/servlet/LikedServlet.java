@@ -24,7 +24,6 @@ public class LikedServlet extends HttpServlet {
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         Map<String, Object> mapper = new HashMap<>();
         List<User> users = likeService.getAllLikedUsers(loggedUser);
-
         mapper.put("users", users);
         freeMarker.render("people-list.ftl", mapper, rs);
     }
