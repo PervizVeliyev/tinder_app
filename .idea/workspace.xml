@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="seventh commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/database/DatabaseConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/database/DatabaseConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Message.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,8 +104,16 @@
       <workItem from="1665596241319" duration="6518000" />
       <workItem from="1665647097445" duration="591000" />
       <workItem from="1665690701344" duration="925000" />
-      <workItem from="1665918096227" duration="13475000" />
+      <workItem from="1665918096227" duration="18039000" />
     </task>
+    <task id="LOCAL-00001" summary="seventh commit">
+      <created>1665941658360</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665941658360</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +132,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Added remote database" />
+    <MESSAGE value="seventh commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="seventh commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

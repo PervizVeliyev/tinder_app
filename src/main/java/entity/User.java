@@ -14,8 +14,9 @@ public class User {
     private String mail;
     private String password;
     private LocalDate lastLogin;
+    private String profession;
 
-    public User(int id, String name, String surname, String photoLink, String mail, String password, LocalDate lastLogin) {
+    public User(int id, String name, String surname, String photoLink, String mail, String password, LocalDate lastLogin, String profession) {
         this.id = id;
         this.name = name;
         this.surname = surname;
@@ -23,6 +24,7 @@ public class User {
         this.mail = mail;
         this.password = password;
         this.lastLogin = lastLogin;
+        this.profession = profession;
     }
 
     public User() {
@@ -30,6 +32,10 @@ public class User {
 
     public String getName() {
         return name;
+    }
+
+    public String getProfession() {
+        return profession;
     }
 
     public void setName(String name) {
@@ -87,6 +93,6 @@ public class User {
     public String getLastLoginGap() {
         if (lastLogin == null) return "unknown";
         long gap = DAYS.between(lastLogin, LocalDate.now());
-        return gap > 0 ? String.valueOf(gap) : "recently";
+        return gap > 0 ? String.valueOf(gap) + " days ago" : "recently";
     }
 }

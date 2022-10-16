@@ -63,7 +63,7 @@
                                 <p class="bg-white m-0 pt-1 pb-1 pl-2 pr-2 rounded">
                                     ${message.getContent()}
                                 </p>
-                                <span class="receive-msg-time">ketty, Jan 25, 6:20 PM</span>
+                                <span class="receive-msg-time">${receiver.name}, ${message.getDate()}</span>
                             </div>
                         </li>
                         </#if>

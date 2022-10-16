@@ -9,6 +9,8 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,9 @@ public class MessageDaoDatabase implements DAO<Message> {
             int from = resultSet.getInt("sender");
             int to = resultSet.getInt("receiver");
             String content = resultSet.getString("content");
-            messages.add(new Message(from, to, content));
+            LocalDate date = resultSet.getDate("sent_at").toLocalDate();
+            LocalTime time = resultSet.getTime("time").toLocalTime();
+            messages.add(new Message(from, to, content, LocalDateTime.of(date, time)));
         }
         return messages;
     }
@@ -40,12 +44,13 @@ public class MessageDaoDatabase implements DAO<Message> {
     @SneakyThrows
     @Override
     public void insert(Message message) {
-        String query = "insert into message values (default, ?, ?,?,?)";
+        String query = "insert into message values (default, ?, ?,?,?,?)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setInt(1, message.getSender());
         statement.setInt(2, message.getReceiver());
         statement.setString(3, message.getContent());
         statement.setObject(4, LocalDate.now());
+        statement.setObject(5, LocalTime.now());
         statement.execute();
     }
 

@@ -30,10 +30,11 @@ public class UserDaoDatabase implements DAO<User> {
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
             Date date = resultSet.getDate("last_login");
+            String profession = resultSet.getString("profession");
             if (date == null) {
-                users.add(new User(id, name, surname, photoLink, mail, password, null));
+                users.add(new User(id, name, surname, photoLink, mail, password, null, profession));
             } else {
-                users.add(new User(id, name, surname, photoLink, mail, password, date.toLocalDate()));
+                users.add(new User(id, name, surname, photoLink, mail, password, date.toLocalDate(), profession));
             }
 
         }
@@ -55,10 +56,11 @@ public class UserDaoDatabase implements DAO<User> {
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
             Date date = resultSet.getDate("last_login");
+            String profession = resultSet.getString("profession");
             if (date == null) {
-                return new User(id, name, surname, photoLink, mail, password, null);
+                return new User(id, name, surname, photoLink, mail, password, null, profession);
             }
-            return new User(id, name, surname, photoLink, mail, password, date.toLocalDate());
+            return new User(id, name, surname, photoLink, mail, password, date.toLocalDate(), profession);
         }
         return new User();
     }

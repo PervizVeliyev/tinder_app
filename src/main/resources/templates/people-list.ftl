@@ -40,10 +40,10 @@
                                         ${user.getSurname()}
                                     </td>
                                     <td class="align-middle">
-                                        Builder Sales Agent
+                                        ${user.getProfession()}
                                     </td>
                                     <td  class="align-middle">
-                                        Last Login:  ${user.getLastLogin()}<br><small class="text-muted">${user.getLastLoginGap()} days ago</small>
+                                        Last Login:  ${user.getLastLogin()}<br><small class="text-white">${user.getLastLoginGap()}</small>
                                     </td>
                                 </tr>
                             </#list>
