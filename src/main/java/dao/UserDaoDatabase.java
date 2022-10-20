@@ -26,7 +26,7 @@ public class UserDaoDatabase implements DAO<User> {
             int id = resultSet.getInt("id");
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
-            String photoLink = resultSet.getString("photoLink");
+            String photoLink = resultSet.getString("photo_link");
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
             Date date = resultSet.getDate("last_login");
@@ -52,7 +52,7 @@ public class UserDaoDatabase implements DAO<User> {
             id = resultSet.getInt("id");
             String name = resultSet.getString("name");
             String surname = resultSet.getString("surname");
-            String photoLink = resultSet.getString("photoLink");
+            String photoLink = resultSet.getString("photo_link");
             String mail = resultSet.getString("mail");
             String password = resultSet.getString("password");
             Date date = resultSet.getDate("last_login");
@@ -68,14 +68,19 @@ public class UserDaoDatabase implements DAO<User> {
     @SneakyThrows
     @Override
     public void insert(User user) {
-        String query = "insert into \"user\" (name, surname, photoLink, mail, password) " +
-                "values (?, ?, ?, ? , ?)";
+        String query = "insert into \"user\" (name, surname, mail, password,profession,photo_link) " +
+                "values (?, ?, ?, ? , ?,?)";
+        if (user.getPhotoLink() == null)
+            query = "insert into \"user\" (name, surname, mail, password,profession,photo_link) " +
+                    "values (?, ?, ? , ?,?,default)";
         PreparedStatement statement = connection.prepareStatement(query);
         statement.setString(1, user.getName());
         statement.setString(2, user.getSurname());
-        statement.setString(3, user.getPhotoLink());
-        statement.setString(4, user.getMail());
-        statement.setString(5, user.getPassword());
+
+        statement.setString(3, user.getMail());
+        statement.setString(4, user.getPassword());
+        statement.setString(5, user.getProfession());
+        if (user.getPhotoLink() != null) statement.setString(6, user.getPhotoLink());
         statement.execute();
     }
 

@@ -4,15 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="ninth commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/LogoutServlet.java" afterDir="false" />
+    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="tenth commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/register.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,26 +41,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/tinder_app&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.47816092&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/User/Desktop/tinder_app/src/main/resources/templates",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.47816092"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\User\Desktop\tinder_app\src\main\resources\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Perviz Veliyev\IdeaProjects\tinder_app\src\main\resources\templates" />
       <recent name="C:\Users\Perviz Veliyev\IdeaProjects\tinder_app\src\main\java\servlet" />
@@ -106,7 +109,7 @@
       <workItem from="1665647097445" duration="591000" />
       <workItem from="1665690701344" duration="925000" />
       <workItem from="1665918096227" duration="18239000" />
-      <workItem from="1666281965410" duration="6558000" />
+      <workItem from="1666281965410" duration="11900000" />
     </task>
     <task id="LOCAL-00001" summary="seventh commit">
       <created>1665941658360</created>
@@ -129,7 +132,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666289464833</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tenth commit">
+      <created>1666292883583</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666292883583</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +162,8 @@
     <MESSAGE value="seventh commit" />
     <MESSAGE value="eighth commit" />
     <MESSAGE value="ninth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="ninth commit" />
+    <MESSAGE value="tenth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="tenth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

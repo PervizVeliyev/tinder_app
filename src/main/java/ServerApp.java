@@ -12,6 +12,7 @@ public class ServerApp {
         ServletContextHandler handler = new ServletContextHandler();
 
         handler.addServlet(LoginServlet.class, "/login");
+        handler.addServlet(RegisterServlet.class, "/register");
 
         EnumSet<DispatcherType> dt = EnumSet.of(DispatcherType.REQUEST);
 

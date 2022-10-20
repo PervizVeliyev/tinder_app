@@ -1,6 +1,7 @@
 package service;
 
 import dao.UserDaoDatabase;
+import entity.Message;
 import entity.User;
 
 import java.util.List;
@@ -16,4 +17,7 @@ public class UserService {
         return userDaoDatabase.get(id);
     }
 
+    public void insertUser(User user){
+        userDaoDatabase.insert(user);
+    }
 }

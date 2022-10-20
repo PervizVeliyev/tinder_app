@@ -26,7 +26,8 @@
         <label for="inputPassword" class="sr-only">Password</label>
         <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-        <p class="mt-5 mb-3 text-muted">&copy; Tinder 2022</p>
+        <a href="/register" style="display: inline-block" class="mt-3">Don't have an account? Sign up</a>
+        <p class="mt-3 mb-3 text-muted">&copy; Tinder 2022</p>
     </form>
 </body>
 </html>
