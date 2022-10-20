@@ -4,15 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="seventh commit">
+    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="eighth commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CookieFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/filter/HttpFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utility/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/UserDaoDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +27,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/tinder_app",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.47816092"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/tinder_app&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.47816092&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Perviz Veliyev\IdeaProjects\tinder_app\src\main\resources\templates" />
@@ -104,7 +110,8 @@
       <workItem from="1665596241319" duration="6518000" />
       <workItem from="1665647097445" duration="591000" />
       <workItem from="1665690701344" duration="925000" />
-      <workItem from="1665918096227" duration="18039000" />
+      <workItem from="1665918096227" duration="18239000" />
+      <workItem from="1666281965410" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="seventh commit">
       <created>1665941658360</created>
@@ -113,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665941658360</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="eighth commit">
+      <created>1665947480788</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665947480788</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,7 +148,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Added remote database" />
     <MESSAGE value="seventh commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="seventh commit" />
+    <MESSAGE value="eighth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="eighth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
