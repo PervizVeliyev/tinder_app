@@ -18,10 +18,12 @@ public class ServerApp {
         handler.addFilter(CookieFilter.class, "/users", dt);
         handler.addFilter(CookieFilter.class, "/liked", dt);
         handler.addFilter(CookieFilter.class, "/message/*", dt);
+        handler.addFilter(CookieFilter.class, "/logout", dt);
 
         handler.addServlet(UserServlet.class, "/users");
         handler.addServlet(LikedServlet.class, "/liked");
         handler.addServlet(MessageServlet.class, "/message/*");
+        handler.addServlet(LogoutServlet.class, "/logout");
         handler.addServlet(StaticServlet.class, "/*");
         handler.addServlet(StaticServlet.class, "/message/css/*");
 

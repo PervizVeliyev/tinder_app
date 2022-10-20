@@ -9,6 +9,7 @@ import lombok.SneakyThrows;
 import service.MessageService;
 import service.UserService;
 import utility.FreeMarkerTemplate;
+import utility.Session;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -21,23 +22,23 @@ public class MessageServlet extends HttpServlet {
     @SneakyThrows
     @Override
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
-        int loggedUser = 1;
+        int userId = Session.getUserId(rq);
         HashMap<String, Object> data = new HashMap<>();
         int receiverId = Integer.parseInt(rq.getPathInfo().substring(1));
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
-        List<Message> messages = messageService.getAllMessages(loggedUser, receiverId);
+        List<Message> messages = messageService.getAllMessages(userId, receiverId);
         data.put("messages", messages);
-        data.put("sender", loggedUser);
+        data.put("sender", userId);
         data.put("receiver", userService.getUser(receiverId));
         freeMarker.render("chat.ftl", data, rs);
     }
 
     @Override
     protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
-        int loggedUser = 1;
+        int userId = Session.getUserId(rq);
         int receiverId = Integer.parseInt(rq.getPathInfo().substring(1));
         String message = rq.getParameter("message");
-        if(!message.isEmpty()) messageService.insertMessage(new Message(loggedUser, receiverId, message));
+        if(!message.isEmpty()) messageService.insertMessage(new Message(userId, receiverId, message));
         rs.sendRedirect("/message/" + receiverId);
     }
 }

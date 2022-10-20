@@ -7,7 +7,7 @@ import java.util.Optional;
 import java.util.UUID;
 
 public class Session {
-    private static final String COOKIE_NAME = "user_id";
+    private static final String COOKIE_NAME = "tinder_user_id";
 
     public static Optional<Cookie> findUser(HttpServletRequest rq) {
         Cookie[] cookies = rq.getCookies();
@@ -26,8 +26,11 @@ public class Session {
                 .orElseThrow(() -> new RuntimeException("Something went wrong!"));
     }
 
-    public static Cookie newRandom() {
-        return new Cookie(COOKIE_NAME, UUID.randomUUID().toString());
+    public static Cookie setUser(int id) {
+        return new Cookie(COOKIE_NAME, String.valueOf(id));
     }
 
+    public static int getUserId(HttpServletRequest rq) {
+        return Integer.parseInt(findOrThrow(rq).getValue());
+    }
 }

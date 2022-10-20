@@ -4,20 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="eighth commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/CookieFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/filter/HttpFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utility/Session.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e310e431-f8c0-44ac-a937-a94d59fdbe64/storage_v2/_src_/database/tinder.2FDtyw/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="ninth commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/servlet/LogoutServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ServerApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/Session.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +106,7 @@
       <workItem from="1665647097445" duration="591000" />
       <workItem from="1665690701344" duration="925000" />
       <workItem from="1665918096227" duration="18239000" />
-      <workItem from="1666281965410" duration="3069000" />
+      <workItem from="1666281965410" duration="6558000" />
     </task>
     <task id="LOCAL-00001" summary="seventh commit">
       <created>1665941658360</created>
@@ -127,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665947480788</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ninth commit">
+      <created>1666289464833</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666289464833</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +151,8 @@
     <MESSAGE value="Added remote database" />
     <MESSAGE value="seventh commit" />
     <MESSAGE value="eighth commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="eighth commit" />
+    <MESSAGE value="ninth commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="ninth commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

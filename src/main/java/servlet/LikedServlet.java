@@ -8,6 +8,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import service.LikeService;
 import utility.FreeMarkerTemplate;
+import utility.Session;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -20,10 +21,10 @@ public class LikedServlet extends HttpServlet {
     @SneakyThrows
     @Override
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
-        int loggedUser = 1;
+        int userId = Session.getUserId(rq);
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         Map<String, Object> mapper = new HashMap<>();
-        List<User> users = likeService.getAllLikedUsers(loggedUser);
+        List<User> users = likeService.getAllLikedUsers(userId);
         mapper.put("users", users);
         freeMarker.render("people-list.ftl", mapper, rs);
     }
