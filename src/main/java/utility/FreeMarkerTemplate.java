@@ -11,13 +11,14 @@ import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.util.Map;
+import java.util.Objects;
 
 public class FreeMarkerTemplate {
     private final Configuration configuration;
 
     public FreeMarkerTemplate() throws URISyntaxException, IOException {
         this.configuration = new Configuration(Configuration.VERSION_2_3_28){{
-            String path = Paths.get(FreeMarkerTemplate.class.getResource("/templates").toURI())
+            String path = Paths.get(Objects.requireNonNull(FreeMarkerTemplate.class.getResource("/templates")).toURI())
                     .toFile().getAbsolutePath();
             setDirectoryForTemplateLoading(new File(path));
             setDefaultEncoding(String.valueOf(StandardCharsets.UTF_8));

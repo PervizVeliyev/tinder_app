@@ -1,15 +1,12 @@
 package servlet;
 
 import entity.User;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.SneakyThrows;
 import service.UserService;
 import utility.FreeMarkerTemplate;
-import utility.Session;
 
 import java.io.IOException;
 import java.util.HashMap;
@@ -20,13 +17,13 @@ public class RegisterServlet extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) {
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         freeMarker.render("register.ftl", new HashMap<>(), rs);
     }
 
     @Override
-    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         String name = rq.getParameter("name");
         String surname = rq.getParameter("surname");
         String photoLink = rq.getParameter("photo");

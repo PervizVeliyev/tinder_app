@@ -1,7 +1,6 @@
 package servlet;
 
 import entity.Message;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -21,7 +20,7 @@ public class MessageServlet extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest rq, HttpServletResponse rs){
         int userId = Session.getUserId(rq);
         HashMap<String, Object> data = new HashMap<>();
         int receiverId = Integer.parseInt(rq.getPathInfo().substring(1));
@@ -34,7 +33,7 @@ public class MessageServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         int userId = Session.getUserId(rq);
         int receiverId = Integer.parseInt(rq.getPathInfo().substring(1));
         String message = rq.getParameter("message");

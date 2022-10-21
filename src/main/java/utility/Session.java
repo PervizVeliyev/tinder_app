@@ -4,7 +4,6 @@ import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 
 import java.util.Optional;
-import java.util.UUID;
 
 public class Session {
     private static final String COOKIE_NAME = "tinder_user_id";

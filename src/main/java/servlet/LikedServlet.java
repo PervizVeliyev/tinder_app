@@ -1,7 +1,6 @@
 package servlet;
 
 import entity.User;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -10,7 +9,6 @@ import service.LikeService;
 import utility.FreeMarkerTemplate;
 import utility.Session;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -20,7 +18,7 @@ public class LikedServlet extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest rq, HttpServletResponse rs){
         int userId = Session.getUserId(rq);
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         Map<String, Object> mapper = new HashMap<>();

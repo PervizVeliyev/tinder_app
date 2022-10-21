@@ -1,7 +1,6 @@
 package servlet;
 
 import entity.User;
-import jakarta.servlet.ServletException;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,13 +18,13 @@ public class LoginServlet extends HttpServlet {
 
     @SneakyThrows
     @Override
-    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest rq, HttpServletResponse rs){
         FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
         freeMarker.render("login.ftl", new HashMap<>(), rs);
     }
 
     @Override
-    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         String mail = rq.getParameter("mail");
         String password = rq.getParameter("password");
         User user = loginService.getUser(mail, password);

@@ -2,9 +2,6 @@ package servlet;
 
 import entity.Like;
 import entity.User;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -18,7 +15,6 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.stream.Collectors;
 
 public class UserServlet extends HttpServlet {
     UserService userService = new UserService();
@@ -45,7 +41,7 @@ public class UserServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         String button = rq.getParameter("button");
         int userId = Session.getUserId(rq);
         Like like = new Like(userId, userService.getAllUsers().get(counter - 1).getId());

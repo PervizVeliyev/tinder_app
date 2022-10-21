@@ -3,7 +3,6 @@ package service;
 import dao.UserDaoDatabase;
 import entity.User;
 
-import java.sql.PreparedStatement;
 import java.util.List;
 
 public class LoginService {

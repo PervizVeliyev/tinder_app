@@ -14,7 +14,7 @@ public interface HttpFilter extends Filter {
     }
 
     @Override
-    default void init(FilterConfig filterConfig) throws ServletException {}
+    default void init(FilterConfig filterConfig) {}
 
     void doHttpFilter(HttpServletRequest rq,
                       HttpServletResponse rs,

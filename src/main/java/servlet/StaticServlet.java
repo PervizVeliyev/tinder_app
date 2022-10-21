@@ -1,6 +1,5 @@
 package servlet;
 
-import jakarta.servlet.ServletException;
 import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,7 +13,7 @@ import java.nio.file.Paths;
 public class StaticServlet extends HttpServlet {
 
     @Override
-    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         Path path;
         if(!rq.getPathInfo().startsWith("/css")) path = Paths.get("src/main/resources/templates/css", rq.getPathInfo());
         else path = Paths.get("src/main/resources/templates", rq.getPathInfo());

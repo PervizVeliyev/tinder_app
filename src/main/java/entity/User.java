@@ -1,6 +1,5 @@
 package entity;
 
-import java.time.Duration;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
@@ -93,6 +92,6 @@ public class User {
     public String getLastLoginGap() {
         if (lastLogin == null) return "unknown";
         long gap = DAYS.between(lastLogin, LocalDate.now());
-        return gap > 0 ? String.valueOf(gap) + " days ago" : "recently";
+        return gap > 0 ? gap + " days ago" : "recently";
     }
 }
