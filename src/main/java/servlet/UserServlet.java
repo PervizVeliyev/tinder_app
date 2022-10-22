@@ -44,7 +44,8 @@ public class UserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
         String button = rq.getParameter("button");
         int userId = Session.getUserId(rq);
-        Like like = new Like(userId, userService.getAllUsers().get(counter - 1).getId());
+        Like like = new Like(userId, userService.getAllUsers().stream()
+                .filter(u -> u.getId() != userId).toList().get(counter - 1).getId());
         if (button.equalsIgnoreCase("like") && !likeService.getAllLikes().contains(like)) {
             likeService.insertLike(like);
         } else if (button.equalsIgnoreCase("dislike") && likeService.getAllLikes().contains(like)) {

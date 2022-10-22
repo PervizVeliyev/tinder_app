@@ -17,9 +17,30 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body style="background-color: #f5f5f5; display: initial;">
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10">
+                <div class="logo">
+                    <div class="image">
+                        <img src="https://cdn-icons-png.flaticon.com/128/508/508735.png"/>
+                    </div>
+                    <div class="title">
+                        <h1>Tinder</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="btn-logout" title="Logout" onclick="location.href='/logout'">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <form method="post">
     <div class="container">
-        <div class="row justify-content-center" style="margin-top: 200px;">
+        <div class="row justify-content-center" style="margin-top: 100px;">
             <div class="col-4 text-center">
                 <div class="card">
                     <div class="card-body">

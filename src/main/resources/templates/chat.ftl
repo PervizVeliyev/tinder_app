@@ -16,7 +16,27 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-10">
+                <div class="logo">
+                    <div class="image">
+                        <img src="https://cdn-icons-png.flaticon.com/128/508/508735.png"/>
+                    </div>
+                    <div class="title">
+                        <h1>Tinder</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="btn-logout" title="Logout" onclick="location.href='/logout'">
+                    <img src="https://cdn-icons-png.flaticon.com/512/126/126467.png"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <div class="container">
     <div class="row">
         <div class="chat-main col-6 offset-3">

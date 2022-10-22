@@ -5,25 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c17968d-ac5a-4048-b64e-19397bcced0d" name="Changes" comment="tenth commit">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dao/MessageDaoDatabase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/filter/HttpFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/filter/HttpFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/LoginService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/LoginService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LikedServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LoginServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/LogoutServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/MessageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/servlet/StaticServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/StaticServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/servlet/UserServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/FreeMarkerTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/FreeMarkerTemplate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Session.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utility/Session.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/like-page.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/people-list.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,6 +112,7 @@
       <workItem from="1666281965410" duration="11900000" />
       <workItem from="1666333000109" duration="1430000" />
       <workItem from="1666382464699" duration="2954000" />
+      <workItem from="1666476646339" duration="3564000" />
     </task>
     <task id="LOCAL-00001" summary="seventh commit">
       <created>1665941658360</created>
