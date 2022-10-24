@@ -27,7 +27,7 @@ This project was a group work and developed by two students:
 
 You can access the app via the link below:
 
-<a href="https://app-tinderr.herokuapp.com/login">Tinder App - © 2022 - All Rights Reserved.</a>
+<a target="_blank" href="https://app-tinderr.herokuapp.com/login">Tinder App - © 2022 - All Rights Reserved.</a>
 
 
 # Tech Stack
