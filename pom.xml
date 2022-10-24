@@ -63,7 +63,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>heroku.App</mainClass>
+                            <mainClass>ServerApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

@@ -48,7 +48,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15332031",
-    "project.structure.side.proportion": "0.47816092"
+    "project.structure.side.proportion": "0.47816092",
+    "settings.editor.selected.configurable": "SQL Dialects"
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
@@ -124,6 +125,7 @@
       <workItem from="1666593615083" duration="4518000" />
       <workItem from="1666603517888" duration="287000" />
       <workItem from="1666603842599" duration="6051000" />
+      <workItem from="1666633402134" duration="340000" />
     </task>
     <task id="LOCAL-00001" summary="seventh commit">
       <created>1665941658360</created>
@@ -188,5 +190,9 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
