@@ -58,7 +58,7 @@
                     <processTypes>
                         <web>java $JAVA_OPTS -cp target/classes:target/dependency/* ServerApp</web>
                     </processTypes>
-                    <appName>sampleappdeployedonheroku</appName>
+                    <appName>app-tinderr</appName>
                 </configuration>
 
             </plugin>
