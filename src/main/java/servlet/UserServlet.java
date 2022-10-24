@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class UserServlet extends HttpServlet {
     UserService userService = new UserService();
@@ -26,7 +27,8 @@ public class UserServlet extends HttpServlet {
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) {
         int userId = Session.getUserId(rq);
         List<User> users = userService.getAllUsers().stream()
-                .filter(u -> u.getId() != userId).toList();
+                .filter(u -> u.getId() != userId)
+                .collect(Collectors.toList());
         if (counter == users.size()) rs.sendRedirect("/liked");
 
         User user = users.get(counter);
@@ -45,7 +47,7 @@ public class UserServlet extends HttpServlet {
         String button = rq.getParameter("button");
         int userId = Session.getUserId(rq);
         Like like = new Like(userId, userService.getAllUsers().stream()
-                .filter(u -> u.getId() != userId).toList().get(counter - 1).getId());
+                .filter(u -> u.getId() != userId).collect(Collectors.toList()).get(counter - 1).getId());
         if (button.equalsIgnoreCase("like") && !likeService.getAllLikes().contains(like)) {
             likeService.insertLike(like);
         } else if (button.equalsIgnoreCase("dislike") && likeService.getAllLikes().contains(like)) {
