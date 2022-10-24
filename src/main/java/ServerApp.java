@@ -1,4 +1,5 @@
 import filter.CookieFilter;
+import heroku.HerokuEnv;
 import jakarta.servlet.DispatcherType;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
@@ -8,7 +9,7 @@ import java.util.EnumSet;
 
 public class ServerApp {
     public static void main(String[] args) throws Exception {
-        Server server = new Server(8080);
+        Server server = new Server(HerokuEnv.port());
         ServletContextHandler handler = new ServletContextHandler();
 
         handler.addServlet(LoginServlet.class, "/login");
