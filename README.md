@@ -2,12 +2,8 @@
 
 1. [Step Project](#step-project---tinder-clone)
 2. [Tech Stack](#tech-stack)
-   <!-- 1. [User service](#user-service)
-        1. [User model](#user-model)
-        2. [Skill model](#skill-model)
-        3. [UserSkill model](#userskill-model)
-    2. [Timestamp service](#timestamp-service) -->
-3. [Back-End](#back-end)
+3. [Project Link](#project-link)
+4. [Back-End](#back-end)
     1. [Endpoints](#endpoints)
         1. [Login](#login)
         2. [Register](#register)
@@ -26,6 +22,13 @@ The main goal of this project was to create a Java Servlet App which represents 
 This project was a group work and developed by two students:
 * __Parviz Valiyev__
 * __Farid Aliyev__
+
+# Project Link
+
+You can access the app via the link below:
+
+<a href="https://app-tinderr.herokuapp.com/login">Tinder App - © 2022 - All Rights Reserved.</a>
+
 
 # Tech Stack
 In this project following technologies were used:
