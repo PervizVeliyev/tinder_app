@@ -5,22 +5,16 @@ import freemarker.template.TemplateException;
 import freemarker.template.TemplateExceptionHandler;
 import jakarta.servlet.http.HttpServletResponse;
 
-import java.io.File;
 import java.io.IOException;
-import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Paths;
 import java.util.Map;
-import java.util.Objects;
 
 public class FreeMarkerTemplate {
     private final Configuration configuration;
 
-    public FreeMarkerTemplate() throws URISyntaxException, IOException {
+    public FreeMarkerTemplate(){
         this.configuration = new Configuration(Configuration.VERSION_2_3_28){{
-            String path = Paths.get(Objects.requireNonNull(FreeMarkerTemplate.class.getResource("/templates")).toURI())
-                    .toFile().getAbsolutePath();
-            setDirectoryForTemplateLoading(new File(path));
+            setClassForTemplateLoading(this.getClass(), "/templates");
             setDefaultEncoding(String.valueOf(StandardCharsets.UTF_8));
             setTemplateExceptionHandler(TemplateExceptionHandler.RETHROW_HANDLER);
             setLogTemplateExceptions(false);

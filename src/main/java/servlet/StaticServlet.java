@@ -1,24 +1,21 @@
 package servlet;
 
-import jakarta.servlet.ServletOutputStream;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.SneakyThrows;
+import utility.FreeMarkerTemplate;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.util.HashMap;
 
 public class StaticServlet extends HttpServlet {
 
+    @SneakyThrows
     @Override
     protected void doGet(HttpServletRequest rq, HttpServletResponse rs) throws IOException {
-        Path path;
-        if(!rq.getPathInfo().startsWith("/css")) path = Paths.get("src/main/resources/templates/css", rq.getPathInfo());
-        else path = Paths.get("src/main/resources/templates", rq.getPathInfo());
-        try (ServletOutputStream os = rs.getOutputStream()) {
-            Files.copy(path, os);
-        }
+        String requestPath = !rq.getPathInfo().startsWith("/css") ? "/css".concat(rq.getPathInfo()) : rq.getPathInfo();
+        FreeMarkerTemplate freeMarker = new FreeMarkerTemplate();
+        freeMarker.render(requestPath, new HashMap<>(), rs);
     }
 }
