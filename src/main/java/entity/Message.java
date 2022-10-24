@@ -18,7 +18,7 @@ public class Message {
 
     public Message(int sender, int receiver, String content, LocalDateTime localDateTime) {
         this(sender, receiver, content);
-        this.date = localDateTime;
+        this.date = localDateTime.plusHours(4);
     }
 
     public String getDate() {
