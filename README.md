@@ -1,6 +1,6 @@
 # Table of Contents
 
-1. [Step Project](#step-project---phonebook-web-application)
+1. [Step Project](#step-project---tinder-clone)
 2. [Tech Stack](#tech-stack)
    <!-- 1. [User service](#user-service)
         1. [User model](#user-model)
