@@ -9,6 +9,8 @@ import java.util.EnumSet;
 
 public class ServerApp {
     public static void main(String[] args) throws Exception {
+        /* https://app-tinderr.herokuapp.com/login */
+
         Server server = new Server(HerokuEnv.port());
         ServletContextHandler handler = new ServletContextHandler();
 
